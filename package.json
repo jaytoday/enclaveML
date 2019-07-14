@@ -5,6 +5,7 @@
   "homepage": "https://jamslevy.github.io/enclaveML",
   "dependencies": {
     "antd": "^3.20.1",
+    "gh-pages": "^2.0.1",
     "react": "16.8.3",
     "react-dom": "16.8.3",
     "react-router-dom": "5.0.0",
@@ -12,7 +13,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
