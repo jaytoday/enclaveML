@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/enclaveML/precache-manifest.4c687e7d56a08b3b5ecd8b897c4c589f.js"
+  "/enclaveML/precache-manifest.212cb081fde19ee8f07cf4cccc2d11e6.js"
 );
 
 workbox.clientsClaim();
