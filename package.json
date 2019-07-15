@@ -4,9 +4,14 @@
   "private": true,
   "homepage": "https://jamslevy.github.io/enclaveML",
   "dependencies": {
+    "@tensorflow-models/coco-ssd": "1.0.1",
+    "@tensorflow/tfjs": "1.0.4",
     "antd": "^3.20.1",
     "gh-pages": "^2.0.1",
+    "highcharts": "7.0.3",
+    "js-datasets-iris": "1.0.4",
     "react": "16.8.3",
+    "react-canvas-draw": "1.0.1-hotfix.4",
     "react-dom": "16.8.3",
     "react-router-dom": "5.0.0",
     "react-scripts": "2.1.5"
@@ -14,7 +19,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

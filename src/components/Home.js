@@ -5,14 +5,13 @@ import { Link } from "react-router-dom";
 
 const Home = () => (
   <Layout.Content style={{marginTop:'50px'}}>
-    <Row type="flex" justify="center" align="middle">
-      <Col span={12}>
+    <Row type="flex" justify="start" align="middle">
+      <Col span={12} offset={4}>
         <h1>enclaveML</h1>
       </Col>
       </Row>
-      <br/>
-      <Row type="flex" justify="center" align="middle">
-      <Col span={12}>
+      <Row type="flex" justify="start" align="middle">
+      <Col span={12} offset={4}>
         <p>enclaveML is an experimental framework for tokenized federated learning.</p>
         <p>It aims to accomplish the following goals:</p>
         <ul>

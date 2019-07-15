@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from './components/Header';
-import Home from './components/Home'
+import Home from './components/Home';
+import PatternRecognitionDemo from './patternRecognition/PatternRecognition';
 import 'antd/dist/antd.css';
 
 class App extends Component {
-  
+
+  constructor(props) {
+      super(props);
+      this.state = { loaded: false };
+  }
+
   render() {
     return (
       <Router basename="/">
         <div>
           <Header />
-          <Route path="/" component={Home} />
+          <div>
+            <Route path="/" component={Home} />
+            <Route path="/pattern_recognition" component={PatternRecognitionDemo} />
+          </div>
         </div>
       </Router>
     );
