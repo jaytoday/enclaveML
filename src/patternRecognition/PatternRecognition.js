@@ -52,7 +52,7 @@ class PatternRecognitionDemo extends React.Component {
         const testData = this.data.getTestData();
 
         const totalBatches = Math.ceil(NUM_TRAIN_ELEMENTS * (1 - validationSplit) / batchSize) * trainEpochs;
-
+        const clients = this.state.clients || 0;
         await this.model.fit(trainData.xs, trainData.labels, {
             batchSize,
             validationSplit,
@@ -60,8 +60,8 @@ class PatternRecognitionDemo extends React.Component {
             callbacks: {
                 onBatchEnd: async (batch, logs) => {
                     this.setState({
-                        status: `Training... (${((this.state.clients + 1) / totalBatches * 100).toFixed(1)}% complete)`,
-                        clients: this.state.clients + 1, 
+                        status: `Training... (${((clients + 1) / totalBatches * 100).toFixed(1)}% complete)`,
+                        clients: clients + 1, 
                         errorData: this.state.errorData.concat(logs.loss),
                         accData: this.state.accData.concat(logs.acc)
                     });

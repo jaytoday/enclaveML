@@ -14,14 +14,14 @@
     "react-canvas-draw": "1.0.1-hotfix.4",
     "react-dom": "16.8.3",
     "react-router-dom": "5.0.0",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "react-webcam": "1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
