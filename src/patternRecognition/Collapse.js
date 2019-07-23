@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import { Collapse, Icon } from 'antd';
-import datasetExample from './dataset.png';
+import React from 'react';
+import { Collapse } from 'antd';
 import Results from './Results';
 
 const CollapseInfo = props => (

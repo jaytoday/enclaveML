@@ -19,9 +19,9 @@ const headerItemStyle = {
 const Header = () => (
   <Layout.Header id="layoutHeader" style={headerContainerStyle}>
     <Menu fixed='top'  mode='horizontal' style={headerMenuStyle}>
-        <Menu.Item><Link to="/" style={{...headerItemStyle, fontSize: '1.2em', fontWeight: 'bold'}}>enclaveML</Link></Menu.Item>
-        <Menu.Item><Link to="/webcam" style={headerItemStyle}>Webcam Demo</Link></Menu.Item>
-        <Menu.Item><Link to="/pattern_recognition" style={headerItemStyle}>Pattern Recognition Demo</Link></Menu.Item>
+        <Menu.Item><Link to="/enclaveML" style={{...headerItemStyle, fontSize: '1.2em', fontWeight: 'bold'}}>enclaveML</Link></Menu.Item>
+        <Menu.Item><Link to="/enclaveML/webcam" style={headerItemStyle}>Webcam Demo</Link></Menu.Item>
+        <Menu.Item><Link to="/enclaveML/pattern_recognition" style={headerItemStyle}>Pattern Recognition Demo</Link></Menu.Item>
     </Menu>
   </Layout.Header>
 );

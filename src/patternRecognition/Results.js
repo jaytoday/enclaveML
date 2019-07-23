@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dropdown, Button, Form, Tag, Menu } from 'antd';
+import { Button, Form } from 'antd';
 
 const Results = props => (
     <Form>

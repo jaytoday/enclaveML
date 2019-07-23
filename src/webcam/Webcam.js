@@ -84,7 +84,7 @@ class WebcamDemo extends React.Component {
     }
 
     render() {
-        const { loaded, loading, activeIndex, clients } = this.state;
+        const { loaded, loading, clients } = this.state;
         
         const Accordian = (
           <div style={{ paddingBottom: 20 }}>

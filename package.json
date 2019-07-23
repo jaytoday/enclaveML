@@ -1,6 +1,6 @@
 {
   "name": "enclaveML",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "homepage": "https://jamslevy.github.io/enclaveML",
   "dependencies": {
@@ -18,7 +18,7 @@
     "react-webcam": "1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node node_modules/react-scripts/scripts/start.js",
     "build": "node node_modules/react-scripts/scripts/build.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

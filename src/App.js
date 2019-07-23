@@ -19,9 +19,9 @@ class App extends Component {
         <div>
           <Header />
           <div>
-            <Route path="/" component={Home} />
-            <Route path="/pattern_recognition" component={PatternRecognitionDemo} />
-            <Route path="/webcam" component={WebcamDemo} />
+            <Route path="/enclaveML" component={Home} />
+            <Route path="/enclaveML/pattern_recognition" component={PatternRecognitionDemo} />
+            <Route path="/enclaveML/webcam" component={WebcamDemo} />
           </div>
         </div>
       </Router>
